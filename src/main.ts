@@ -1,7 +1,8 @@
-import { v4 } from 'uuid'
-import './style.css'
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
+import { v4 } from 'uuid'
+import './style.css'
+
 interface Task {
   id: string
   title: string
@@ -99,7 +100,5 @@ function renderTasks(tasks: Task[]) {
 
     //insertar en la lista
     tasksList?.append(taskElement)
-
-
   })
 }
